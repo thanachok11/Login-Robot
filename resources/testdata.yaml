@@ -1,6 +1,6 @@
-username: "BOSS"
+username: "Test1"
 firstName: "Thanachok"
 lastName: "Suwan"
-email: "tha@kkumail.com"
-password: "1234"
+register_email: "Test1@kkumail.com"
+register_password: "1234"
 

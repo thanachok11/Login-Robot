@@ -19,9 +19,9 @@ Fill Login Form
     sleep         2s
     Wait Until Element Is Visible    xpath=//button[@type='submit']    10s
     Click Button    xpath=//button[@type='submit']
-    
+    sleep        5s
     Capture Page Screenshot
-    Sleep        10s
+    Sleep        5s
     Capture Page Screenshot
     # คลิกปุ่มออกจากระบบ
     Click Element    xpath=//button[contains(@class,'Navbar_logoutButton__LkheW')]

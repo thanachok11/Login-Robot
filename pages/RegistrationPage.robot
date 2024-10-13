@@ -29,7 +29,9 @@ Fill Registration Form
     Wait Until Element Is Visible    xpath=//input[@id='acceptTerms']      20s
     Click Element    xpath=//input[@id='acceptTerms']
 
-    Capture Page Screenshot
     sleep        5s
     Wait Until Element Is Visible    xpath=//button[@type='submit' and text()='สมัครสมาชิก']      20s
     Click Button    xpath=//button[@type='submit' and text()='สมัครสมาชิก']
+    sleep        2s
+    Capture Page Screenshot
+    
