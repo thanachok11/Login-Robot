@@ -1,279 +1,273 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.9.13 on darwin)" generated="2024-10-13T16:24:15.279324" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.9.13 on darwin)" generated="2024-10-13T16:41:13.856262" rpa="false" schemaversion="5">
 <suite id="s1" name="Testcases" source="/Users/Admin/Desktop/Login-Robot/tests/Testcases.robot">
-<test id="s1-t1" name="Register a New User" line="11">
+<test id="s1-t1" name="Register a New User" line="10">
 <kw name="Open Registration Page" owner="RegistrationPage">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:15.740465" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
-<msg time="2024-10-13T16:24:16.029010" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
+<msg time="2024-10-13T16:41:14.321825" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
 <arg>${baseUrl}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-13T16:24:15.739893" elapsed="6.730854"/>
+<status status="PASS" start="2024-10-13T16:41:14.321242" elapsed="5.849554"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-10-13T16:24:22.481497" elapsed="0.459820"/>
+<status status="PASS" start="2024-10-13T16:41:20.171679" elapsed="0.400224"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//a[@class='register']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:22.943033" elapsed="0.049680"/>
+<status status="PASS" start="2024-10-13T16:41:20.572429" elapsed="0.041335"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:22.993566" level="INFO">Clicking link 'xpath=//a[@class='register']'.</msg>
+<msg time="2024-10-13T16:41:20.614502" level="INFO">Clicking link 'xpath=//a[@class='register']'.</msg>
 <arg>xpath=//a[@class='register']</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:22.993141" elapsed="0.145527"/>
+<status status="PASS" start="2024-10-13T16:41:20.614130" elapsed="0.112038"/>
 </kw>
 <doc>Navigate to the registration page by clicking the "สมัครสมาชิก" link on the homepage</doc>
-<status status="PASS" start="2024-10-13T16:24:15.736500" elapsed="7.402473"/>
+<status status="PASS" start="2024-10-13T16:41:14.319440" elapsed="6.407172"/>
 </kw>
 <kw name="Fill Registration Form" owner="RegistrationPage">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='username']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:23.146442" elapsed="0.679224"/>
+<status status="PASS" start="2024-10-13T16:41:20.733501" elapsed="0.254567"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:23.826822" level="INFO">Typing text 'Test1' into text field 'xpath=//input[@name='username']'.</msg>
+<msg time="2024-10-13T16:41:20.989032" level="INFO">Typing text 'Test1' into text field 'xpath=//input[@name='username']'.</msg>
 <arg>xpath=//input[@name='username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:23.826047" elapsed="0.749435"/>
+<status status="PASS" start="2024-10-13T16:41:20.988427" elapsed="0.359207"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='firstName']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:24.575843" elapsed="0.030183"/>
+<status status="PASS" start="2024-10-13T16:41:21.348054" elapsed="0.028738"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:24.607327" level="INFO">Typing text 'Thanachok' into text field 'xpath=//input[@name='firstName']'.</msg>
+<msg time="2024-10-13T16:41:21.377549" level="INFO">Typing text 'Thanachok' into text field 'xpath=//input[@name='firstName']'.</msg>
 <arg>xpath=//input[@name='firstName']</arg>
 <arg>${firstName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:24.606360" elapsed="0.256700"/>
+<status status="PASS" start="2024-10-13T16:41:21.377125" elapsed="0.218335"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='lastName']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:24.863395" elapsed="0.042108"/>
+<status status="PASS" start="2024-10-13T16:41:21.595807" elapsed="0.030932"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:24.906257" level="INFO">Typing text 'Suwan' into text field 'xpath=//input[@name='lastName']'.</msg>
+<msg time="2024-10-13T16:41:21.627504" level="INFO">Typing text 'Suwan' into text field 'xpath=//input[@name='lastName']'.</msg>
 <arg>xpath=//input[@name='lastName']</arg>
 <arg>${lastName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:24.905829" elapsed="0.249392"/>
+<status status="PASS" start="2024-10-13T16:41:21.627075" elapsed="0.140163"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='email']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:25.155581" elapsed="0.033366"/>
+<status status="PASS" start="2024-10-13T16:41:21.767799" elapsed="0.033508"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:25.189749" level="INFO">Typing text 'Test1@kkumail.com' into text field 'xpath=//input[@name='email']'.</msg>
+<msg time="2024-10-13T16:41:21.802122" level="INFO">Typing text 'Test1@kkumail.com' into text field 'xpath=//input[@name='email']'.</msg>
 <arg>xpath=//input[@name='email']</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:25.189299" elapsed="0.224448"/>
+<status status="PASS" start="2024-10-13T16:41:21.801675" elapsed="0.204904"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='password']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:25.414103" elapsed="0.034539"/>
+<status status="PASS" start="2024-10-13T16:41:22.006955" elapsed="0.031360"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:25.449723" level="INFO">Typing text '1234' into text field 'xpath=//input[@name='password']'.</msg>
+<msg time="2024-10-13T16:41:22.039273" level="INFO">Typing text '1234' into text field 'xpath=//input[@name='password']'.</msg>
 <arg>xpath=//input[@name='password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:25.449041" elapsed="0.148208"/>
+<status status="PASS" start="2024-10-13T16:41:22.038680" elapsed="0.264192"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@id='acceptTerms']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:25.597640" elapsed="0.030979"/>
+<status status="PASS" start="2024-10-13T16:41:22.303211" elapsed="0.026983"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:25.630470" level="INFO">Clicking element 'xpath=//input[@id='acceptTerms']'.</msg>
+<msg time="2024-10-13T16:41:22.330896" level="INFO">Clicking element 'xpath=//input[@id='acceptTerms']'.</msg>
 <arg>xpath=//input[@id='acceptTerms']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:25.629179" elapsed="0.087077"/>
+<status status="PASS" start="2024-10-13T16:41:22.330535" elapsed="0.088719"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-13T16:24:30.719287" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-10-13T16:41:27.421415" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-13T16:24:25.716630" elapsed="5.002839"/>
+<status status="PASS" start="2024-10-13T16:41:22.419748" elapsed="5.002044"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//button[@type='submit' and text()='สมัครสมาชิก']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:30.719786" elapsed="0.076120"/>
+<status status="PASS" start="2024-10-13T16:41:27.422451" elapsed="0.035504"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:30.796588" level="INFO">Clicking button 'xpath=//button[@type='submit' and text()='สมัครสมาชิก']'.</msg>
+<msg time="2024-10-13T16:41:27.458781" level="INFO">Clicking button 'xpath=//button[@type='submit' and text()='สมัครสมาชิก']'.</msg>
 <arg>xpath=//button[@type='submit' and text()='สมัครสมาชิก']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:30.796250" elapsed="0.084905"/>
+<status status="PASS" start="2024-10-13T16:41:27.458372" elapsed="0.088414"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-13T16:24:32.882189" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-10-13T16:41:29.548095" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-13T16:24:30.881476" elapsed="2.001233"/>
+<status status="PASS" start="2024-10-13T16:41:27.547456" elapsed="2.000941"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:33.204855" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-13T16:41:29.888945" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-10-13T16:24:32.883230" elapsed="0.322178"/>
+<status status="PASS" start="2024-10-13T16:41:29.548870" elapsed="0.340318"/>
 </kw>
 <arg>${username}</arg>
 <arg>${firstName}</arg>
 <arg>${lastName}</arg>
-<arg>${register_email}</arg>
-<arg>${register_password}</arg>
+<arg>${email}</arg>
+<arg>${password}</arg>
 <doc>Fill out the registration form with first name, last name, email, and password</doc>
-<status status="PASS" start="2024-10-13T16:24:23.143408" elapsed="10.062285"/>
+<status status="PASS" start="2024-10-13T16:41:20.731531" elapsed="9.157948"/>
 </kw>
 <kw name="Open Login Page" owner="LoginPage">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:33.207372" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
-<msg time="2024-10-13T16:24:33.363266" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
+<msg time="2024-10-13T16:41:29.894866" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
 <arg>${baseUrl}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-13T16:24:33.206814" elapsed="4.801077"/>
+<status status="PASS" start="2024-10-13T16:41:29.893741" elapsed="5.495395"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-10-13T16:24:38.009074" elapsed="0.444126"/>
+<status status="PASS" start="2024-10-13T16:41:35.390189" elapsed="0.433687"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//a[@class='login']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:38.453687" elapsed="0.048280"/>
+<status status="PASS" start="2024-10-13T16:41:35.824278" elapsed="0.067751"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:38.502686" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
+<msg time="2024-10-13T16:41:35.892853" level="INFO">Clicking link 'xpath=//a[@class='login']'.</msg>
 <arg>xpath=//a[@class='login']</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:38.502321" elapsed="0.127788"/>
+<status status="PASS" start="2024-10-13T16:41:35.892433" elapsed="0.151448"/>
 </kw>
 <doc>Navigate to the registration page by clicking the "สมัครสมาชิก" link on the homepage</doc>
-<status status="PASS" start="2024-10-13T16:24:33.206213" elapsed="5.424172"/>
+<status status="PASS" start="2024-10-13T16:41:29.890746" elapsed="6.153424"/>
 </kw>
 <kw name="Fill Login Form" owner="LoginPage">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='email' and @type='email']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:38.634156" elapsed="0.733064"/>
+<status status="PASS" start="2024-10-13T16:41:36.045968" elapsed="0.271861"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:39.368052" level="INFO">Typing text 'tha@kkumail.com' into text field 'xpath=//input[@name='email' and @type='email']'.</msg>
+<msg time="2024-10-13T16:41:36.318637" level="INFO">Typing text 'Test1@kkumail.com' into text field 'xpath=//input[@name='email' and @type='email']'.</msg>
 <arg>xpath=//input[@name='email' and @type='email']</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:39.367584" elapsed="0.418068"/>
+<status status="PASS" start="2024-10-13T16:41:36.318184" elapsed="0.544807"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='password' and @type='password']</arg>
 <arg>20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:39.786547" elapsed="0.026736"/>
+<status status="PASS" start="2024-10-13T16:41:36.863329" elapsed="0.028982"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:39.814022" level="INFO">Typing text '1234' into text field 'xpath=//input[@name='password' and @type='password']'.</msg>
+<msg time="2024-10-13T16:41:36.893562" level="INFO">Typing text '1234' into text field 'xpath=//input[@name='password' and @type='password']'.</msg>
 <arg>xpath=//input[@name='password' and @type='password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:39.813606" elapsed="0.127221"/>
+<status status="PASS" start="2024-10-13T16:41:36.893012" elapsed="0.188996"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-13T16:24:41.941778" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-10-13T16:41:39.083383" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-13T16:24:39.941157" elapsed="2.001007"/>
+<status status="PASS" start="2024-10-13T16:41:37.082360" elapsed="2.001234"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//button[@type='submit']</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-13T16:24:41.942717" elapsed="0.028686"/>
+<status status="PASS" start="2024-10-13T16:41:39.083925" elapsed="0.029356"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:41.972240" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<msg time="2024-10-13T16:41:39.115801" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
 <arg>xpath=//button[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-13T16:24:41.971861" elapsed="0.103097"/>
+<status status="PASS" start="2024-10-13T16:41:39.115117" elapsed="0.090403"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-13T16:24:47.077187" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-10-13T16:41:44.207412" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-13T16:24:42.075326" elapsed="5.002307"/>
+<status status="PASS" start="2024-10-13T16:41:39.205876" elapsed="5.001719"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:47.493355" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-13T16:41:44.675241" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-10-13T16:24:47.078292" elapsed="0.415279"/>
+<status status="PASS" start="2024-10-13T16:41:44.207962" elapsed="0.467466"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-13T16:24:52.494592" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-10-13T16:41:49.676456" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-13T16:24:47.493883" elapsed="5.000904"/>
+<status status="PASS" start="2024-10-13T16:41:44.675784" elapsed="5.001094"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:52.934511" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-13T16:41:50.142209" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-10-13T16:24:52.495248" elapsed="0.439453"/>
+<status status="PASS" start="2024-10-13T16:41:49.677400" elapsed="0.464990"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-13T16:24:52.935363" level="INFO">Clicking element 'xpath=//button[contains(@class,'Navbar_logoutButton__LkheW')]'.</msg>
-<msg time="2024-10-13T16:24:53.400829" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-10-13T16:24:53.401127" level="FAIL">Element with locator 'xpath=//button[contains(@class,'Navbar_logoutButton__LkheW')]' not found.</msg>
+<msg time="2024-10-13T16:41:50.143032" level="INFO">Clicking element 'xpath=//button[contains(@class,'Navbar_logoutButton__LkheW')]'.</msg>
 <arg>xpath=//button[contains(@class,'Navbar_logoutButton__LkheW')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-10-13T16:24:52.935016" elapsed="0.476809">Element with locator 'xpath=//button[contains(@class,'Navbar_logoutButton__LkheW')]' not found.</status>
+<status status="PASS" start="2024-10-13T16:41:50.142700" elapsed="1.820969"/>
 </kw>
 <arg>${email}</arg>
 <arg>${password}</arg>
 <doc>Log in with the given email and password</doc>
-<status status="FAIL" start="2024-10-13T16:24:38.632559" elapsed="14.779925">Element with locator 'xpath=//button[contains(@class,'Navbar_logoutButton__LkheW')]' not found.</status>
+<status status="PASS" start="2024-10-13T16:41:36.045008" elapsed="15.919108"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-10-13T16:24:53.413509" elapsed="0.322540"/>
+<status status="PASS" start="2024-10-13T16:41:51.978587" elapsed="0.305388"/>
 </kw>
 <doc>Register a new user with all required fields</doc>
-<status status="FAIL" start="2024-10-13T16:24:15.732855" elapsed="38.007581">Element with locator 'xpath=//button[contains(@class,'Navbar_logoutButton__LkheW')]' not found.</status>
+<status status="PASS" start="2024-10-13T16:41:14.318015" elapsed="37.966221"/>
 </test>
-<status status="FAIL" start="2024-10-13T16:24:15.284335" elapsed="38.464064"/>
+<status status="PASS" start="2024-10-13T16:41:13.859329" elapsed="38.426348"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Testcases">Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcases">Testcases</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-10-13T16:24:16.029010" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
-<msg time="2024-10-13T16:24:33.363266" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
 </errors>
 </robot>
